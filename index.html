@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhiya's Portfolio</title>
+  <link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+  <header>
+    <h1>Hi, I'm Abhiya 👩‍💻</h1>
+    <p>Cybersecurity | Networks | Systems</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#studies">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <div class="about-photo">
+        <img src="myphoto.jpeg" alt="Abhiya's Photo">
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>Hello 👋 I'm <b>Abhiya M Jose</b>.  
+        Passionate about <b>security, networks, and systems</b>.  
+        Currently pursuing <b>M.Tech in Cyber Security</b> at IIT Delhi.  
+        Exploring future technologies in intrusion detection, cryptography, and secure networks.</p>
+
+        <div class="social-links">
+          <a href="https://leetcode.com/u/Abhiya/" class="btn leetcode">LeetCode</a>
+          <a href="https://www.geeksforgeeks.org/user/abhiyamjose02/" class="btn gfg">GFG</a>
+          <a href="https://www.linkedin.com/in/abhiya-m-jose-1584291a3" class="btn linkedin">LinkedIn</a>
+          <a href="https://github.com/Abhiya24" class="btn github">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Languages: C, C++, Python (Basic)</li>
+      <li>Libraries: PyTorch, TensorFlow, Pandas, Numpy</li>
+      <li>Tools: Wireshark, Burp Suite, Mininet, OpenFlow, Git</li>
+      <li>Formal Methods: TLA+, TLA+ Toolbox (TLC)</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card" onclick="toggleProject(this)">
+      <h3>🔐 Robust Backdoor Detection in Neural Networks</h3>
+      <p class="hidden">Improved detection AUC from 89% → 92% using continual learning, focal loss tuning, and ensemble classifiers.</p>
+    </div>
+
+    <div class="card" onclick="toggleProject(this)">
+      <h3>🌐 Software-Defined Networking</h3>
+      <p class="hidden">Implemented spanning tree & shortest-path routing in SDN using Ryu & Mininet. Extended functionality with congestion-aware routing.</p>
+    </div>
+
+    <div class="card" onclick="toggleProject(this)">
+      <h3>💻 TCP-like UDP: Reliable File Transfer</h3>
+      <p class="hidden">Built a reliable file transfer protocol over UDP with ACKs, retransmissions, and Reno congestion control in Mininet + Ryu.</p>
+    </div>
+
+    <div class="card" onclick="toggleProject(this)">
+      <h3>🖥️ Socket Programming & Scheduling Algorithms</h3>
+      <p class="hidden">Built a client-server app using TCP sockets & pThreads with distributed and centralized scheduling.</p>
+    </div>
+
+    <div class="card" onclick="toggleProject(this)">
+      <h3>⚡ Buffer Overflow Vulnerability Analysis</h3>
+      <p class="hidden">Discovered and exploited stack-based buffer overflows in a C web server using GDB on Linux.</p>
+    </div>
+
+    <div class="card" onclick="toggleProject(this)">
+      <h3>🔎 Scalable Network Traffic Analysis & Threat Detection</h3>
+      <p class="hidden">Developed a lightweight IDS with anomaly detection, sublinear-space methods, and threat analysis for large-scale traffic.</p>
+    </div>
+  </section>
+
+  <!-- Studies & Experience -->
+  <section id="studies">
+    <h2>Studies & Experience</h2>
+    <ul>
+      <li><b>M.Tech in Cyber Security</b>, IIT Delhi – CGPA: 8.64</li>
+      <li><b>B.Tech in CSE</b>, IIIT Bhagalpur – CGPA: 8.26</li>
+      <li><b>Cybersecurity Intern</b>, Macquarie Global Services (Feb 2023 – Aug 2023)</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:abhiyamjose02@gmail.com">abhiyamjose02@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Abhiya M Jose</p>
+  </footer>
+
+  <script>
+    function toggleProject(card) {
+      const desc = card.querySelector("p");
+      desc.classList.toggle("hidden");
+    }
+  </script>
+</body>
+</html>

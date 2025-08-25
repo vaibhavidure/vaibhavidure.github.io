@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abhiya's Portfolio</title>
+  <title>Vaibhavi's Portfolio</title>
   <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
   <header>
-    <h1>Hi, I'm Abhiya 👩‍💻</h1>
-    <p>Cybersecurity | Networks | Systems</p>
+    <h1>Hi, I'm Vaibhavi 👩‍💻</h1>
+    <p>Power Electronics | Gate Drivers | GaN Devices</p>
     <nav>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
-      <a href="#studies">Experience</a>
+      <a href="#experience">Experience</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -23,20 +23,19 @@
   <section id="about" class="about-section">
     <div class="about-container">
       <div class="about-photo">
-        <img src="myphoto.jpeg" alt="Abhiya's Photo">
+        <img src="myphoto.jpeg" alt="Vaibhavi's Photo">
       </div>
       <div class="about-text">
         <h2>About Me</h2>
-        <p>Hello 👋 I'm <b>Abhiya M Jose</b>.  
-        Passionate about <b>security, networks, and systems</b>.  
-        Currently pursuing <b>M.Tech in Cyber Security</b> at IIT Delhi.  
-        Exploring future technologies in intrusion detection, cryptography, and secure networks.</p>
+        <p>Hello 👋 I'm <b>Vaibhavi Rajesh Dure</b>.  
+        Passionate about <b>power electronics, gate drivers, and wide bandgap devices</b>.  
+        Currently pursuing <b>M.Tech in Power Electronics, Electrical Machines & Drives</b> at IIT Delhi.  
+        Exploring future technologies in EV charging, high-efficiency telecom power supplies, and GaN-based conversion systems.</p>
 
         <div class="social-links">
-          <a href="https://leetcode.com/u/Abhiya/" class="btn leetcode">LeetCode</a>
-          <a href="https://www.geeksforgeeks.org/user/abhiyamjose02/" class="btn gfg">GFG</a>
-          <a href="https://www.linkedin.com/in/abhiya-m-jose-1584291a3" class="btn linkedin">LinkedIn</a>
-          <a href="https://github.com/Abhiya24" class="btn github">GitHub</a>
+          <a href="https://vaibhavidure.github.io" class="btn portfolio">Portfolio</a>
+          <a href="https://github.com/VaibhaviDure" class="btn github">GitHub</a>
+          <a href="https://www.linkedin.com/in/vaibhavi-dure" class="btn linkedin">LinkedIn</a>
         </div>
       </div>
     </div>
@@ -46,10 +45,9 @@
   <section id="skills">
     <h2>Skills</h2>
     <ul>
-      <li>Languages: C, C++, Python (Basic)</li>
-      <li>Libraries: PyTorch, TensorFlow, Pandas, Numpy</li>
-      <li>Tools: Wireshark, Burp Suite, Mininet, OpenFlow, Git</li>
-      <li>Formal Methods: TLA+, TLA+ Toolbox (TLC)</li>
+      <li>Programming: MATLAB, Code Composer Studio, MPLab, LaTeX, Basics of C/C++</li>
+      <li>Design/Simulation Software: Simulink, LTSpice, Altium Designer, KiCad</li>
+      <li>Areas of Interest: Gate Driver Design, Power Conversion, PCB Design, GaN Devices, EV & Charging Systems</li>
     </ul>
   </section>
 
@@ -58,54 +56,55 @@
     <h2>Projects</h2>
 
     <div class="card" onclick="toggleProject(this)">
-      <h3>🔐 Robust Backdoor Detection in Neural Networks</h3>
-      <p class="hidden">Improved detection AUC from 89% → 92% using continual learning, focal loss tuning, and ensemble classifiers.</p>
+      <h3>⚡ 3 kW Telecom Power Supply (IIT Delhi Thesis)</h3>
+      <p class="hidden">Designed & built a 3 kW supply with 97.5% efficiency, Totem-Pole PFC + LLC Resonant Converter, GaN drivers, and EMI compliance.</p>
     </div>
 
     <div class="card" onclick="toggleProject(this)">
-      <h3>🌐 Software-Defined Networking</h3>
-      <p class="hidden">Implemented spanning tree & shortest-path routing in SDN using Ryu & Mininet. Extended functionality with congestion-aware routing.</p>
+      <h3>🔋 Buck Converter Design & Control</h3>
+      <p class="hidden">Modeled a 1 kW buck converter (72V → 48V) in MATLAB/Simulink with dual-loop current & voltage control.</p>
     </div>
 
     <div class="card" onclick="toggleProject(this)">
-      <h3>💻 TCP-like UDP: Reliable File Transfer</h3>
-      <p class="hidden">Built a reliable file transfer protocol over UDP with ACKs, retransmissions, and Reno congestion control in Mininet + Ryu.</p>
+      <h3>⚡ Boost PFC-Fed Flyback Converter</h3>
+      <p class="hidden">Simulated a 230V AC → 48V DC, 750W system with peak current mode control ensuring stable performance (PM ≈ 59°).</p>
     </div>
 
     <div class="card" onclick="toggleProject(this)">
-      <h3>🖥️ Socket Programming & Scheduling Algorithms</h3>
-      <p class="hidden">Built a client-server app using TCP sockets & pThreads with distributed and centralized scheduling.</p>
-    </div>
-
-    <div class="card" onclick="toggleProject(this)">
-      <h3>⚡ Buffer Overflow Vulnerability Analysis</h3>
-      <p class="hidden">Discovered and exploited stack-based buffer overflows in a C web server using GDB on Linux.</p>
-    </div>
-
-    <div class="card" onclick="toggleProject(this)">
-      <h3>🔎 Scalable Network Traffic Analysis & Threat Detection</h3>
-      <p class="hidden">Developed a lightweight IDS with anomaly detection, sublinear-space methods, and threat analysis for large-scale traffic.</p>
+      <h3>🚀 Closed-Loop PMSM Drive Control</h3>
+      <p class="hidden">Simulated a 2.3 kW PMSM drive with dq-axis control and inverter implementation in MATLAB/Simulink.</p>
     </div>
   </section>
 
-  <!-- Studies & Experience -->
-  <section id="studies">
-    <h2>Studies & Experience</h2>
+  <!-- Experience Section -->
+  <section id="experience">
+    <h2>Experience</h2>
     <ul>
-      <li><b>M.Tech in Cyber Security</b>, IIT Delhi – CGPA: 8.64</li>
-      <li><b>B.Tech in CSE</b>, IIIT Bhagalpur – CGPA: 8.26</li>
-      <li><b>Cybersecurity Intern</b>, Macquarie Global Services (Feb 2023 – Aug 2023)</li>
+      <li><b>M.Tech in Power Electronics, Electrical Machines & Drives</b>, IIT Delhi – CGPA: 8.56</li>
+      <li><b>B.Tech in Electrical Engineering</b>, NIT Warangal – CGPA: 8.14</li>
+      <li><b>Intern</b>, Reliance Industries Ltd. (June–July 2023) – Studied Multi-Level & Multi-Cell Converter Topologies for drives</li>
+      <li><b>Intern</b>, GAIL India Ltd. (Dec 2021) – Electrical & instrumentation systems in gas installations</li>
+    </ul>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <ul>
+      <li>GATE EE 2024: AIR 677</li>
+      <li>JEE Mains 2020: 99.213 percentile</li>
+      <li>Runner-up in Barebones competition</li>
     </ul>
   </section>
 
   <!-- Contact -->
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:abhiyamjose02@gmail.com">abhiyamjose02@gmail.com</a></p>
+    <p>Email: <a href="mailto:vaibhavidure@gmail.com">vaibhavidure@gmail.com</a></p>
   </section>
 
   <footer>
-    <p>© 2025 Abhiya M Jose</p>
+    <p>© 2025 Vaibhavi Rajesh Dure</p>
   </footer>
 
   <script>
